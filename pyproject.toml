@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qmoe"
+version = "0.0.0"
+authors = [
+  { name="Elias Frantar", email="elias.frantar@gmail.com" },
+]
+description = "QMoE: Practical Sub-1-Bit Compression of Trillion-Parameter Models"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "torch==2.0.0+cu117",
+    "transformers==4.28.0",
+    "datasets==2.10.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mlsys24-qmoe/qmoe"
+"Source" = "https://github.com/mlsys24-qmoe/qmoe"
+"Bug Tracker" = "https://github.com/mlsys24-qmoe/qmoe/issues"
